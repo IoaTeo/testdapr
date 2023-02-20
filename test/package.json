@@ -5,8 +5,12 @@
   "main": "dist/main.js",
   "private": true,
   "scripts": {
-    "build": "rimraf ./dist && tsc",
-    "start": "npm run build && node dist/main.js",
+    "ng": "ng",
+    "start": "ng serve --port 3000 --host 0.0.0.0",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "start:dapr:dev": "dapr run --app-id '$Default' --dapr-http-port 3000 --components-path ./components -- npm run start",
     "start:dapr-grpc": "dapr run --app-id example-pubsub --app-port 50051 --app-protocol grpc --components-path ./components npm run start",
     "start:dapr-http": "dapr run --app-id example-pubsub --app-port 50051 --app-protocol http --components-path ./components npm run start"
   },

@@ -1,0 +1,16 @@
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: pubsub-items
+spec:
+  type: pubsub.azure.eventhubs
+  version: v1
+  # metadata:
+  # - name: connectionString
+  #   value: "YOUR_CONNECTION_STRING"
+  # - name: storageAccountName
+  #   value: "YOUR_STORAGE_ACCOUNT_NAME"
+  # - name: storageAccountKey
+  #   value: "YOUR_STORAGE_ACCOUNT_KEY"
+  # - name: storageContainerName
+  #   value: "YOUR_CONTAINER_NAME"
