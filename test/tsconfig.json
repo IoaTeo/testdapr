@@ -1,5 +1,12 @@
 {
   "compilerOptions": {
+    "paths": {
+      "http": ["./node_modules/stream-http"],
+      "path": ["./node_modules/mime-types"],
+      "zlib": ["./node_modules/destroy"],
+      "fs": ["./node_modules/destroy"],
+      "net": ["./node_modules/@grpc/grpc-js/build/src"]
+    },
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
     /* Basic Options */
     // "incremental": true,                         /* Enable incremental compilation */
